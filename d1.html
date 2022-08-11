@@ -12,6 +12,9 @@
         }
 
         .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100vw;
             height: 100vh;
             background-color: #b72a67;
@@ -19,6 +22,9 @@
         }
 
         .navigation {
+            position: fixed;
+            left: 0;
+            top: 0;
             padding: 20px;
             width: 20vw;
             height: 100vh;
@@ -124,62 +130,103 @@
             opacity: 1;
             transform: translateY(0px);
         }
-
-        .hu {
-            display: flex;
-            flex-grow: 1;
-            justify-content: center;
-            align-items: center;
-        }
-        .a{
-            width: 800px;
+        .photo {
+            width: 680px;
             height: 400px;
-        }
-        .b{
-            width: 550px;
-            height: 600px;
-            margin-left: 300px;
-        }
-        .main {
+            background-color: #b72a67;
+            margin-left: 100px;
             display: grid;
-            grid-template-columns: 30% 20% 20%;
-            grid-template-rows: 30% 20% 30%;
-            grid-area:
-                "alim  alim1 alim2 "
-                "alim  alim1 alim2"
-                "alim3 alim4 alim5";
-            background-color: blue;
-            height: 1000px;
-            width: 1500px;
+            grid-template-rows: 38% 20% 38%;
+            grid-template-columns: 39% 20% 39%;
+            gap: 5px;
         }
 
-        .alim{
-            background-color: red;
-            margin: 10px;
+        .black {
+            background-color: black;
+            grid-row: 1/4;
+            grid-column: 3/5;
+            width: 300px;
+            height: 240px;
         }
-        .alim1{
-            background-color: red;
-            margin: 10px;
+
+        .yellow {
+            background-color: orange;
+            grid-row: 3/5;
+            grid-column: 3/5;
+            width: 300px;
+            height: 155px;
         }
-        .alim2{
-            background-color: red;
-            margin: 10px;
+
+        .blue {
+            background-color: blue;
+            grid-row: 1/3;
+            grid-column: 1/4;
+            width: 400px;
+            height: 150px;
         }
-        .alim3{
-            background-color: red;
-            margin: 10px;
+
+        .cyan {
+            background-color: cyan;
+            grid-row: 2/4;
+            grid-column: 1/3;
+            width: 250px;
+            height: 90px;
+          
         }
-        .alim4{
-            background-color: red;
-            margin: 10px;
-        } 
-        .alim5{
-            background-color: red;
-            margin: 10px;
+
+        .brown {
+            background-color: brown;
+            grid-row: 2/3;
+            grid-column: 2/3;
+            width: 130px;
+            height: 110px;
+            
         }
-        .alim6{
+
+        .red {
             background-color: red;
-            margin: 10px;
+            grid-row: 3/4;
+            grid-column: 1/3;
+            width: 400px;
+            height: 155px;
+        }
+
+        .yellow:hover {
+            box-shadow: 0px 5px 50px 5px black;
+            transform: translateY(-10px) translateX(-10px);
+            animation: color linear 2s;
+        }
+
+        .black:hover {
+            box-shadow: 5px 5px 0px 0px black;
+
+            transform: translateY(-10px) translateX(-10px);
+        }
+
+        .blue:hover {
+            box-shadow: 5px 5px 0px 0px black;
+
+            transform: translateY(-10px) translateX(-10px);
+        }
+
+        .cyan:hover {
+            box-shadow: 5px 5px 0px 0px black;
+
+            transform: translateY(-10px) translateX(-10px);
+        }
+
+        .brown:hover {
+            box-shadow: 5px 5px 0px 0px black;
+            transform: translateY(-10px) translateX(-10px);
+        }
+
+        .red:hover {
+            box-shadow: 5px 5px 0px 0px black;
+            transform: translateY(-5px) translateX(-5px);
+        }
+
+        @keyframes color {
+            to {}
         }
     </style>
 </head>
@@ -199,11 +246,13 @@
             </div>
         </div>
 
-        <div class="hu">
-            <div class="main">
-                <img src="../Screen Shot 2022-08-11 at 17.05.54.png" alt="" class="a">
-                <img src="../Screen Shot 2022-08-11 at 17.11.06.png" alt="" class="b">
-            </div>
+        <div class="photo">
+            <img src="https://lh3.googleusercontent.com/pw/ACtC-3eqDpYXSzQK9Gr8Dm6pRBTXg65teqvPUlndvrG31BEmbHGYSiGja4ZhpI86_b5pYG_nWHZvi0-a2svpmvqtfGHSqLAypliNdl9vI-xGKT0XixvVSzroZ0e7HXFeyVoNyU5XMuMoEzf5f6VgQbmIO2yr=w1384-h791-no" alt="" class="black">
+            <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="" class="yellow">
+            <img src="https://lh3.googleusercontent.com/pw/ACtC-3eqDpYXSzQK9Gr8Dm6pRBTXg65teqvPUlndvrG31BEmbHGYSiGja4ZhpI86_b5pYG_nWHZvi0-a2svpmvqtfGHSqLAypliNdl9vI-xGKT0XixvVSzroZ0e7HXFeyVoNyU5XMuMoEzf5f6VgQbmIO2yr=w1384-h791-no" alt="" class="blue">
+            <img src="https://lh3.googleusercontent.com/pw/ACtC-3eqDpYXSzQK9Gr8Dm6pRBTXg65teqvPUlndvrG31BEmbHGYSiGja4ZhpI86_b5pYG_nWHZvi0-a2svpmvqtfGHSqLAypliNdl9vI-xGKT0XixvVSzroZ0e7HXFeyVoNyU5XMuMoEzf5f6VgQbmIO2yr=w1384-h791-no" alt="" class="cyan">
+           <img src="https://lh3.googleusercontent.com/pw/ACtC-3eqDpYXSzQK9Gr8Dm6pRBTXg65teqvPUlndvrG31BEmbHGYSiGja4ZhpI86_b5pYG_nWHZvi0-a2svpmvqtfGHSqLAypliNdl9vI-xGKT0XixvVSzroZ0e7HXFeyVoNyU5XMuMoEzf5f6VgQbmIO2yr=w1384-h791-no" alt="" class="brown">
+            <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="" class="red">
         </div>
     </div>
 </body>
