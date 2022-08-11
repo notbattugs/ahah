@@ -125,7 +125,7 @@
             transform: translateY(0px);
         }
 
-        .hu{
+        .hu {
             display: flex;
             flex-grow: 1;
             justify-content: center;
@@ -142,22 +142,50 @@
         }
         .main {
             display: grid;
-            grid-template-columns: 35% 30% 35%;
-            grid-template-rows: 40% 20% 40%;
+            grid-template-columns: 30% 20% 20%;
+            grid-template-rows: 30% 20% 30%;
             grid-area:
-                3fr 2fr 3fr 
-                3fr 2fr 3fr 
-                3fr 2fr 3fr;
+                "alim  alim1 alim2 "
+                "alim  alim1 alim2"
+                "alim3 alim4 alim5";
             background-color: blue;
             height: 1000px;
-            width: 1300px;
+            width: 1500px;
+        }
+
+        .alim{
+            background-color: red;
+            margin: 10px;
+        }
+        .alim1{
+            background-color: red;
+            margin: 10px;
+        }
+        .alim2{
+            background-color: red;
+            margin: 10px;
+        }
+        .alim3{
+            background-color: red;
+            margin: 10px;
+        }
+        .alim4{
+            background-color: red;
+            margin: 10px;
+        } 
+        .alim5{
+            background-color: red;
+            margin: 10px;
+        }
+        .alim6{
+            background-color: red;
+            margin: 10px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        
         <div class="navigation">
             <div class="hamburger">
                 <div class="bar top"></div>
