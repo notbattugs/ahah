@@ -6,55 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .footerDad {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-end;
-        }
-
-        .footer {
-            width: 100vw;
-            margin-bottom: 3px;
-            height: 45px;
-            color:black;
-            background-color: whitesmoke;
-            display: flex;
-            align-items: center;
-        }
-
-        .footerTwo {
-            display: flex;
-            width: 100%;
-            height: 50px;
-            color: black;
-            background-color:whitesmoke;
-        }
-    </style>
 </head>
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        padding-bottom: 400px;
+        box-sizing: border-box;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .GoogleIcon {
+        width: 400px;
+        height: 200px;
+    }
+
+    .search {
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 30px;
+    }
+
+    .typeSearch {
+        width: 400px;
+        height: 30px;
+        border: none;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        background-color: white;
+        border: 1px solid rgb(180, 180, 180);
+        border-radius: 10px;
+    }
+
+    .button:hover {
+        border: 1px solid black;
+    }
+
+    .head {
+        position: absolute;
+        top: 10px;
+        right: 150px;
+    }
+
+    .head1 {
+        position: absolute;
+        top: 10px;
+        right: 80px;
+    }
+
+    .signin {
+        background-color: cyan;
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        top: 10px;
+        right: -70px;
+    }
+
+    .footerDad {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        margin: 0;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .footer {
+        width: 100vw;
+        margin-bottom: 3px;
+        height: 45px;
+        color: black;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+    }
+
+    .footerTwo {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        color: black;
+        background-color: whitesmoke;
+    }
+</style>
 
 <body>
-    <div class="footerDad">
-        <div class="footer">
-            <div style="margin-left: 30px ;">Монгол</div>
-        </div>
-        <div class="footerTwo">
-            <p style="padding-left: 3vw;">Тухай</p>
-            <p style="padding-left: 5vw;">Зар Сурталчилгаа</p>
-            <p style="padding-left: 7vw;">Бизнес</p>
-            <p style="padding-left: 9vw;">Хайлт хэрхэн ажилладаг вэ</p>
-            <p style="padding-left: 13vw;">Нууцлал</p>
-            <p style="padding-left: 14vw;">Нөхцөл</p>
-            <p style="padding-left: 15vw;">Тохируулга</p>
-        </div>
+    <div class="head">
+        <span class="head"> Gmail</span>
+        <br>
+        <span class="head1"> Images</span>
+
+        <button class="signin"> Sign in</button>
     </div>
+    <div class="parent">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <img src="https://www.finsmes.com/wp-content/uploads/2016/09/google.jpg " alt="" class="GoogleIcon">
+        </a>
+        <div class="search">
+            <p>🔍</p>
+            <input type="search" class="typeSearch">
+            </input>
+        </div>
+
+        <div>
+            <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+            <button class="button">Google search</button>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <button class="button"> I'm Feeling Lucky</button>
+        </div>
+
+
+        <div class="footerDad">
+            <div class="footer">
+                <div style="margin-left: 30px ;">Монгол</div>
+            </div>
+            <div class="footerTwo">
+                <p style="padding-left: 3vw;">Тухай</p>
+                <p style="padding-left: 5vw;">Зар Сурталчилгаа</p>
+                <p style="padding-left: 7vw;">Бизнес</p>
+                <p style="padding-left: 9vw;">Хайлт хэрхэн ажилладаг вэ</p>
+                <p style="padding-left: 13vw;">Нууцлал</p>
+                <p style="padding-left: 14vw;">Нөхцөл</p>
+                <p style="padding-left: 15vw;">Тохируулга</p>
+            </div>
+        </div>
 </body>
 
 </html>
