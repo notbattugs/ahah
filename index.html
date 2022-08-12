@@ -14,7 +14,7 @@
         display: flex;
         padding-bottom: 400px;
         box-sizing: border-box;
-        background-color: white;
+        background-color: black;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -26,18 +26,21 @@
     }
 
     .search {
-        border: 1px solid black;
-        border-radius: 10px;
+        border: 1px solid white;
+        border-radius: 50px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 30px;
+        height: 40px;
     }
 
     .typeSearch {
         width: 400px;
-        height: 30px;
+        height: 50px;
         border: none;
+        outline: none;
+        color: aqua;
+        background-color: black;
     }
 
     .parent {
@@ -46,32 +49,40 @@
     }
 
     .button {
-        background-color: white;
+        
         border: 1px solid rgb(180, 180, 180);
-        border-radius: 10px;
+        border-radius: 5px;
+        width: 130px;
+        height: 40px;
+        background-color: rgb(85, 85, 85);
+        color: white;
+    
     }
 
     .button:hover {
-        border: 1px solid black;
+        border: 2px solid beige;
     }
 
     .head {
         position: absolute;
         top: 10px;
         right: 150px;
+        color: white;
+
     }
 
     .head1 {
         position: absolute;
         top: 10px;
         right: 80px;
+        color: white    ;
     }
 
     .signin {
         background-color: cyan;
         position: absolute;
-        width: 80px;
-        height: 40px;
+        width: 100px;
+        height: 30px;
         border-radius: 10px;
         top: 10px;
         right: -70px;
@@ -94,31 +105,46 @@
         margin-bottom: 3px;
         height: 45px;
         color: black;
-        background-color: whitesmoke;
+        background-color: rgb(85, 85, 85);
         display: flex;
         align-items: center;
     }
 
     .footerTwo {
         display: flex;
+       justify-content: space-between;
         width: 100%;
         height: 50px;
         color: black;
-        background-color: whitesmoke;
+        background-color:rgb(85, 85, 85) ;
+    }
+    .wuuta{
+        display: flex;
+        justify-content: start;
+        width: 50%;
+        
+    }
+    .woota{
+        display: flex;
+        justify-content: end;
+        width: 30%;
+    }
+
+    .search{
+        overflow: hidden;
     }
 </style>
 
 <body>
     <div class="head">
-        <span class="head"> Gmail</span>
+        <a href="https://mail.google.com/mail/u/0/#inbox"  target="_blank" class="head">Email</a>
         <br>
-        <span class="head1"> Images</span>
-
+        <a href="https://photos.google.com/explore" target="_blank" class="head1">Images</a>
         <button class="signin"> Sign in</button>
     </div>
     <div class="parent">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.finsmes.com/wp-content/uploads/2016/09/google.jpg " alt="" class="GoogleIcon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0bLD0zxvXlWy5EQJc9pSYjD_2_enJxphLDbkbqWsqcrlfkWkzNf5EsEVzwdZaPFv8OY0&usqp=CAU " alt="" class="GoogleIcon">
         </a>
         <div class="search">
             <p>🔍</p>
@@ -134,19 +160,20 @@
             <button class="button"> I'm Feeling Lucky</button>
         </div>
 
-
         <div class="footerDad">
             <div class="footer">
-                <div style="margin-left: 30px ;">Монгол</div>
+                <div style="margin-left: 30px ;">Country</div>
             </div>
             <div class="footerTwo">
-                <p style="padding-left: 3vw;">Тухай</p>
-                <p style="padding-left: 5vw;">Зар Сурталчилгаа</p>
-                <p style="padding-left: 7vw;">Бизнес</p>
-                <p style="padding-left: 9vw;">Хайлт хэрхэн ажилладаг вэ</p>
-                <p style="padding-left: 13vw;">Нууцлал</p>
-                <p style="padding-left: 14vw;">Нөхцөл</p>
-                <p style="padding-left: 15vw;">Тохируулга</p>
+                <div class="wuuta">
+                    <p style="padding-left:1vw;">About</p>
+                    <p style="padding-left: 1vw;">Advertising</p>
+                    <p style="padding-left: 1vw;">Business</p>
+                    <p style="padding-left: 1vw;">How Search works</p></div>
+                <div class="woota">
+                    <p style="padding-left: 1vw;">Privacy</p>
+                    <p style="padding-left: 1vw;">Terms</p>
+                    <p style="padding-left: 1vw;">Settings</p></div>
             </div>
         </div>
 </body>
