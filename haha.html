@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y8 Game</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .gameDad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(36, 36, 36)
+        }
+
+        #header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 70px;
+            background-color: rgb(31, 30, 30);
+            border: 2px solid white;
+        }
+
+        .do {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            background-color: rgb(63, 59, 59);
+            border-radius: 10%;
+            padding: 1px;
+        }
+
+        .trans {
+            background-color: transparent;
+            border: none;
+        }
+
+        #trans {
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: red;
+        }
+
+        #rr {
+            width: 70px;
+            height: 50px;
+            background-color: red;
+            border-radius: 10px;
+            border: none;
+            margin-left: 10px;
+        }
+
+        #log {
+            width: 70px;
+            height: 50px;
+            border-radius: 15%;
+            border: none;
+            margin-left: 8px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 1000px;
+            height: 130px;
+            background-color: red;
+        }
+
+        #main{
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+        }
+        .box{
+            margin-left: 10px;
+            border-radius: 10%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gameDad">
+        <header id="header">
+            <img style="width: 70px; height:70px" src="./Screen Shot 2022-08-12 at 18.02.39.png" alt="y8">
+            <div class="do">
+                <button id="trans">Game</button>
+                <button class="trans">Video</button>
+            </div>
+            <img style="height:50px; width:400px" src="./Screen Shot 2022-08-12 at 17.42.40.png" alt="">
+            <img style="height: 50px; width:300px" src="./Screen Shot 2022-08-12 at 17.49.13.png" alt="">
+            <div>
+                <button id="rr">Register</button>
+                <button id="log">Log in</button>
+            </div>
+            <img style="height: 50px; width:90px;margin-left: 8px;" src="./Screen Shot 2022-08-12 at 18.00.05.png"
+                alt="">
+        </header>
+        <main class="main">
+            <div id="main">
+                <div class="box">Fighting</button>
+                <button class="box">Driving & Racing</button>
+                <button class="box">Shooting</button>
+                <button class="box">Strategy & RPG</button>
+                <button class="box">Sports</button>
+                <button class="box">Thinking</button>
+                <button class="box">All Tags</button>
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>
